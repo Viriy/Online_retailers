@@ -9,34 +9,27 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link href="css/base.css" type="text/css" rel="stylesheet">
-    <script src="js/jquery.min.js"></script>
+    <script src="js/resize.js"></script>
 </head>
 
 <body>
-	<div class="section">
-		<img src="images/index.jpg" alt="首页" usemap="#Map">
-		<map name="Map">
-			<area shape="rect" coords="1,132,167,248" href="p2.html">
-			<area shape="rect" coords="1,2297,103,2370" href="index.html">
-			<area shape="rect" coords="167,133,353,248" href="p6.html">
-			<area shape="rect" coords="353,133,542,248" href="p13.html">
-			<area shape="rect" coords="1,248,167,353" href="p12.html">
-			<area shape="rect" coords="167,247,353,353" href="p4.html">
-			<area shape="rect" coords="353,248,541,353" href="p5.html">
-			<area shape="rect" coords="0,352,167,474" href="p10.html">
-			<area shape="rect" coords="167,352,353,474" href="p3.html">
-			<area shape="rect" coords="353,353,539,474" href="p11.html">
-			<area shape="rect" coords="422,2295,543,2368" href="p7.html">
-			<area shape="rect" coords="0,30,69,82" href="javascript:history.go(-1);">
-		</map>
-</div>
-<script>
-$(function(){
-	$("area").click(function(){
-		window.location.href = $(this).attr("href")
-	})
-})
-	</script>
+    <div class="section">
+        <img src="images/index.jpg" alt="首页">
+        <a class="pa i link_back" href="javascript:history.go(-1);"></a>
+        <a class="pa i link_home" href="index.html"></a>
+        <a class="pa i link_user" href="p7.html"></a>
+        <div class="index_menu" flex="main:justify wrap">
+        	<a href="p2.html"></a>
+        	<a href="p6.html"></a>
+        	<a href="p13.html"></a>
+        	<a href="p12.html"></a>
+        	<a href="p4.html"></a>
+        	<a href="p5.html"></a>
+        	<a href="p10.html"></a>
+        	<a href="p3.html"></a>
+        	<a href="p11.html"></a>
+        </div>
+    </div>
 </body>
 
 </html>
