@@ -1,0 +1,9 @@
+*{margin: 0;padding: 0}
+body{position: relative}
+a,map,area,a:focus,map:focus,area:focus{outline: 0}
+.section{max-width:540px;margin-left:auto;margin-right: auto}
+.section img{display: block;width: 100%}
+
+@media (min-width:540px) {
+	.section{width：540px}
+}
